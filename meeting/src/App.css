@@ -1,0 +1,73 @@
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.header-calendar .header-item{
+  width: calc(100% / 7);
+  padding: 2px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-calendar .main-item{
+    width: calc(100% / 7);
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+        cursor: pointer;
+        border: 2px solid green;
+        font-weight: bold;
+}
+.main-calendar .main-item:nth-child(n+1){
+  border-right: unset;
+  border-bottom: unset;
+}
+.main-calendar .main-item:nth-child(7n+7){
+  border-right: 2px solid green;
+}
+.main-calendar .main-item:nth-child(n+15){
+  border-bottom: 2px solid green;
+}
+
+.box-list-time a{
+  font-size: 12px;
+  text-decoration: none;
+  display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
